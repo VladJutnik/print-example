@@ -1,0 +1,47 @@
+<div class="reports">
+    <div class="container">
+            <h3 class="text-center">
+                Выгрузка отчета
+            </h3>
+            <table class="table table-hover table-bordered">
+                <tr id="doctors">
+                    <th>
+                        Выберите параметр
+                    </th>
+                    <td>
+                        <select class="form-control" id="doctor">
+                            <option value="">Все</option>
+                            <option value="1">Параметр 1</option>
+                            <option value="2">Параметр 2</option>
+                            <option value="3">Параметр 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Период с:
+                    </th>
+                    <td>
+                        <input type="date" class="form-control" id="date_start">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Период по:
+                    </th>
+                    <td>
+                        <input type="date" class="form-control" id="date_end">
+                    </td>
+                </tr>
+                <tr class="d-print-none">
+                    <td colspan="2">
+                        <div id="row_btns" class="row">
+                            <input type="button" id="reports_btn" class="btn btn-primary form-control"
+                                   value="Показать"/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="page_content" class="container-fluid"></div>
+</div>
