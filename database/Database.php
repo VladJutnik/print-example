@@ -8,15 +8,15 @@ class Database extends mysqli
         if(CONNECTION==='local')
         {
             $host='localhost';
-            $passwd = 'Lampa6516';
+            $passwd = 'root';
         }
         else
         {
             $host='192.168.1.3';
-            $passwd = 'Lampa6516';
+            $passwd = 'root';
         }
         if($dbname === '')
-            $dbname = 'medic';
+            $dbname = 'table';
         if($port==='')
             $port = ini_get("mysqli.default_port");
         if($socket==='')

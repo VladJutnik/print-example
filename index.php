@@ -16,25 +16,57 @@
     <script src="build/pdfmake.js"></script>
     <script src="build/pdfmake.min.js"></script>
     <script src="build/vfs_fonts.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container-fluid row p-2 m-1">
-    <div class="col p-1">
-        <button class="btn btn-outline-secondary btn-menu"
-                onclick=objPrintingTable.v_report()>Отчет вариант 1
-        </button>
+
+<div class="wrapper">
+    <!--Фоновое изображение-->
+    <section class="fullscreen">
+        <div class="fullscreen__body">
+            <h1 class="fullscreen__title">ТЕСТОВЫЙ САЙТ</h1>
+            <div class="fullscreen__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, sapiente.</div>
+            <a href="#" class="fullscreen__link">Перейти</a>
+        </div>
+    </section>
+    <div class="content">
+        <div class="content__body">
+            <div class="container row p-2 m-1">
+                <div class="col p-1">
+                    <button class="btn btn-outline-secondary btn-menu"
+                            onclick=objPrintingTable.v_report()>Отчет вариант 1
+                    </button>
+                </div>
+                <!--<div class="col-1 m-1" id="adm"></div>-->
+                <div class="col-2 text-right" id="login"></div>
+            </div>
+            <div class="container-fluid mt-5" id="main"></div>
+            <div class="container-fluid mt-5" id="result">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid at deleniti dicta dolorem doloremque doloribus eveniet ex id illo impedit itaque iusto labore, libero natus neque nulla obcaecati perspiciatis placeat quaerat repudiandae unde veritatis vitae voluptatem voluptatum. Aliquid consequatur cum cupiditate, debitis distinctio error excepturi exercitationem fugit iure iusto laudantium magni molestiae natus neque obcaecati odit, officia officiis optio placeat quasi quis reprehenderit sit, ullam veritatis voluptatibus. Alias corporis ea et maiores necessitatibus perspiciatis voluptatibus? Assumenda autem ex labore laudantium maxime minima neque pariatur placeat, quasi temporibus! Accusamus aspernatur at consequatur consequuntur, cumque debitis dignissimos dolor dolore doloremque ducimus eaque earum eveniet iusto labore molestias numquam officia officiis optio pariatur perferendis qui repellendus similique, sint velit veniam vero voluptas. Architecto doloribus fugit impedit ipsam maiores officiis omnis perferendis, quam, quasi repellendus repudiandae soluta ullam vero! Error incidunt laboriosam placeat rem voluptatem! Hic, iusto magni numquam omnis quibusdam tempore totam.
+            </div>
+        </div>
     </div>
-    <!--<div class="col-1 m-1" id="adm"></div>-->
-    <div class="col-2 text-right" id="login"></div>
+    <footer class="footer">
+        <div class="footer__body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda autem beatae dolorum eius eveniet porro, quae quo ratione tempora. Adipisci excepturi numquam sint tempora. Eligendi numquam optio quo soluta.
+        </div>
+    </footer>
 </div>
-<div class="container-fluid mt-5" id="main"></div>
 
-<div class="container-fluid mt-5" id="result">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid at deleniti dicta dolorem doloremque doloribus eveniet ex id illo impedit itaque iusto labore, libero natus neque nulla obcaecati perspiciatis placeat quaerat repudiandae unde veritatis vitae voluptatem voluptatum. Aliquid consequatur cum cupiditate, debitis distinctio error excepturi exercitationem fugit iure iusto laudantium magni molestiae natus neque obcaecati odit, officia officiis optio placeat quasi quis reprehenderit sit, ullam veritatis voluptatibus. Alias corporis ea et maiores necessitatibus perspiciatis voluptatibus? Assumenda autem ex labore laudantium maxime minima neque pariatur placeat, quasi temporibus! Accusamus aspernatur at consequatur consequuntur, cumque debitis dignissimos dolor dolore doloremque ducimus eaque earum eveniet iusto labore molestias numquam officia officiis optio pariatur perferendis qui repellendus similique, sint velit veniam vero voluptas. Architecto doloribus fugit impedit ipsam maiores officiis omnis perferendis, quam, quasi repellendus repudiandae soluta ullam vero! Error incidunt laboriosam placeat rem voluptatem! Hic, iusto magni numquam omnis quibusdam tempore totam.
 
-    <input type="button" class="btn btn-outline-danger form-control btn-sm" value="Экспорт в pdf" id="print">
+<!--
+<section class="rectangle">
+    <video autoplay muted loop class="video-custom">
+        <source src="images/video/Clouds.mp4" type="video/mp4">
+    </video>
+    <div class="conrainer-custom">
+        <h1 class="header-main">ТЕСТОВЫЙ САЙТ</h1>
+        <h2 class="header-second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, obcaecati!</h2>
+    </div>
+</section>-->
 
-</div>
+
 <!--<script type="text/javascript">
     $(document).ready(function(){
         alert(jQuery.fn.jquery);
@@ -42,6 +74,7 @@
 </script>-->
 
 
+<script src="js/utils.js"></script>
 <script src="js/main.js"></script>
 <script src="js/js/jquery-3.5.1.min.js"></script>
 

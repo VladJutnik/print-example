@@ -1,0 +1,79 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #eae6e6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #170d0d;
+    font-size: 20px;
+}
+
+.wrapper {
+    min-height: 100vh; /*высота*/
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    min-height: 100vh; /*для того что бы наша секция стала на весь экран!*/
+    display: flex;
+    background-image: url(images/start.jpeg); /* Путь к фоновому изображению */
+    background-color: #666; /* Цвет фона */
+    object-fit: cover;
+}
+
+.fullscreen__body {
+    flex: 1 1 auto;/*позволяет стать блоку на весь экран*/
+    width: 100%;
+    max-width: 1000px;/*ограничиваем ширину блока*/
+    margin: 0px auto; /*выраниваем по центру*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.fullscreen__title {
+    font-size: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+.fullscreen__text {
+    font-size: 25px;
+    margin: 0px 0px 20px 0px;
+}
+
+.fullscreen__link {
+    display: inline-block;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #e9e9e9;
+    text-decoration: none;
+    letter-spacing: 2px;
+    align-self: center;
+    padding: 0px 20px;
+}
+
+.content {
+
+}
+
+.content__body {
+
+}
+
+.footer {
+    background-color: #151414;
+    text-align: center;
+}
+
+.footer__body {
+
+}
+
