@@ -1,6 +1,6 @@
 const objPrintingTable = {
     v_report: function () {
-        $('#main').load("/print-example/forms-html/view-table.html", function () {
+        $('#main').load("./forms-html/view-table.html", function () {
             $('#reports_btn').click(function () {
                 utils.Ajax({
                     url: "/php/report1.php",
